@@ -96,7 +96,7 @@ fun SwipeableActionsBox(
       .drawOverContent { ripple.draw(scope = this) }
       .draggable(
         orientation = Horizontal,
-        enabled = !state.isResettingOnRelease,
+        //enabled = !state.isResettingOnRelease,
         onDragStopped = {
           if (thresholdCrossed && visibleAction != null) {
             swipedAction = visibleAction
